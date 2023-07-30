@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+}
+.landing .head{
+    display: flex;
+    justify-content: space-between;
+}
+.landing .head img{
+    height: 75px;
+    width:130px;
+}
+.head .nav ul li a{
+    color: rgb(9, 187, 9);
+    font-weight: bolder;
+}
+.head .nav ul{
+display: flex;
+margin-top: 33px;
+}
+.nav ul li{
+    padding: 0px 10px 0px 10px;
+}
+ul li a{
+    color: green;
+    padding: 6px;
+    border-radius: 9px;
+}
+.nav ul li a:hover{
+    color: white;
+    background: green;
+}
+
+
+ .contact{
+    position: relative;
+    height: auto;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+ }
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #000;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #000;
+}
+.contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contain .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contain .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contain .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contain .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.contain .contactInfo .box .text h3{
+    font-weight: 500;
+    color: blue;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #a39292;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0; 
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: rgb(232, 103, 103);
+    font-size: 12px;
+    transform: translate(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #000bcd; 
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+footer{
+    background-color: rgb(243, 242, 242);
+    height: auto;
+    padding-top: 30px; 
+    text-align: center;
+}
+.footer.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer.content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer.content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+margin: 0 10px;
+}
+.socials a{
+    color: rgb(52, 215, 61);
+}
+.socials a i{
+    font-size: 1.1rem;
+}
+.socials a:hover{
+    color: rgb(228, 250, 28);
+}
+
+@media (max-width: 991px) {
+    .contact{
+        padding: 50px;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactInfo{
+        margin-bottom: 40px;
+    }
+    contain .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}

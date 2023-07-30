@@ -1,0 +1,576 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.landing {
+    animation: fade 3s 0.6s cubic-bezier(0, 0.5, 0, 1) forwards;
+    background-image: url(brooke-lark-08bOYnH_r_E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.landing .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.landing .head img {
+    height: 75px;
+    width: 130px;
+    margin-left: 39px;
+}
+
+.head .nav ul li a {
+    color: rgb(9, 187, 9);
+    font-weight: bolder;
+}
+
+.head .nav ul {
+    display: flex;
+    align-items: center;
+    /* margin-right: 39px; */
+}
+
+.nav ul li {
+    padding: 0px 10px 0px 10px;
+}
+ul li a{
+    color: green;
+    padding: 6px;
+    border-radius: 9px;
+}
+.nav ul li a:hover{
+    color: white;
+    background: green;
+}
+
+.content {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.landing .juice {
+    display: inline-block;
+    margin-top: 120px;
+}
+
+.landing .juice h1 {
+    font-size: 76px;
+    /* color: rgb(228, 250, 28); */
+    color: rgb(237, 241, 8);
+    animation: blend 3s 1.0s ease backwards;
+    font-weight: bolder;
+}
+
+.landing .juice p {
+    animation: bend 3s 1.6s ease backwards;
+    color: black;
+    font-size: 1.8em;
+    margin-top: 23px;
+    padding-right: 20px;
+}
+
+.fid {
+    color: rgb(52, 215, 61);
+    font-size: 87px;
+}
+
+.bop button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+}
+
+.bop img{
+    width: 22px;
+    height: 22px;
+}
+.bop button:hover{
+    background: greenyellow;
+    color: aliceblue;
+}
+
+.arrowhead{
+    animation:pulse 2s 3s ease-out infinite;
+    position: absolute;
+    bottom: 4vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.arrowhead img{
+    animation: slide-left 1s 1s ease-out forwards;
+    opacity: 0;
+}
+.rating{
+    bottom: 90px;
+    right: 26px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 16px;
+    display: flex;
+    margin-left: 26px;
+    right: 1;
+    color: green;
+    font-weight: 39px;
+    justify-content: center;
+    text-align: center;
+
+}
+.rating-1{
+    padding: 17px;
+    justify-content: center;
+}
+
+.rating-1 h1{
+    font-size: 27px;
+}
+
+.rating-1 h2{
+    font-size: 17px;
+}
+.rating-1 img{
+    height: 35px;
+    width: 35px;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.back img{
+    position: absolute;
+    top: 59px;
+    right: 36px;
+    z-index: -1;
+    width: 530px;
+    height: 530px;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes blend {
+    0% {
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes bend {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+    50%{
+       opacity: .8;
+       transform: scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.wind .bead{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 99px;
+    background: rgb(243, 242, 242);
+    padding: 23px;
+    border-radius:90px;
+}
+.bead span{
+    color: rgb(228, 250, 28);
+}
+.bead p{
+    font-size: 28px;
+    width: 45%;
+    line-height: 2.6rem;
+}
+
+.bead h1{
+    font-size:49px;
+    color: rgb(52, 215, 61);
+    width: 45%;
+    line-height: 4.1rem;
+
+}
+.king{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 90px; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.pin1 .jot1 img{
+    height: 300px;
+    width: 360px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2),
+    0px 6px 20px 0px rgb(0, 0, 0, 0.19);
+    text-align: center;
+}
+.pin2 .jot2 img{
+    height: 300px;
+    width: 360px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2),
+    0px 6px 20px 0px rgb(0, 0, 0, 0.19);
+    text-align: center;
+}
+.pin3 .jot3 img{
+    height: 300px;
+    width: 360px;
+    border-radius: 30px;
+    /* box-shadow: 3px 3px 3px 3px rgb(236, 236, 236); */
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2),
+    0px 6px 20px 0px rgb(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.wine{
+    max-width: 360px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+.wine h1{
+    margin-top: 9px;
+    color: rgb(52, 215, 61);;
+}
+
+/* .king .jot img{
+    width: 120px;
+    height: 190px;
+    border-radius: 9px;
+    margin-right: 26px;
+} */
+
+.king .pin h1{
+   font-size: 33px; 
+   margin-bottom: 16px;
+   color: rgb(52, 215, 61);
+   font-weight: bolder;
+}
+.king .pin p{
+font-size: 16px;
+}
+
+.healthy{
+    margin-top: 120px;
+}
+.healthy h1{
+   text-align: center;
+   margin-bottom: 39px;
+}
+.testimony{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 36px;
+    font-size: 20px;
+}
+
+  .healthy-pics{
+    text-align: left;
+  }
+  .healthy-pics .joint{
+    display: flex;
+    align-items: center;
+  }
+  .joint img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-right: 16px;
+  }
+
+footer{
+    background-color: rgb(243, 242, 242);
+    height: auto;
+    padding-top: 30px; 
+    text-align: center;
+}
+.footer.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer.content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer.content p{
+    max-width: 500px;
+    /* margin: 10px auto; */
+    line-height: 28px;
+    font-size: 14px;
+    padding: 12px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+margin: 0 10px;
+}
+.socials a{
+    color: rgb(52, 215, 61);
+}
+.socials a i{
+    font-size: 1.1rem;
+}
+.socials a:hover{
+    color: rgb(228, 250, 28);
+}
+
+
+
+  @media (max-width:1200px) {
+    .landing .head img {
+        height: 55px;
+        width: 90px;
+    }
+    .landing .head{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+    .head .nav ul {
+        display: flex;
+        margin-top: 22px;
+     }
+    
+    .nav ul li {
+        padding: 0px 6px 0px 6px;
+    }
+
+    .landing .juice {
+
+        margin-top: 130px;
+    }
+    
+    .landing .juice h1 {
+        font-size: 50px;
+    }
+    
+    .landing .juice p {
+        font: 1.4em sans-serif;
+        margin-top: 19px;
+    }
+    .fid {
+        font-size: 67px;
+    }
+    .wind .king{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 39px;
+    }
+  }
+  @media (max-width:650px){
+    .landing{
+        width: 100%;
+    }
+    .landing .head img {
+        height: 35px;
+        width: 70px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .landing .head{
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+    .landing .head ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav{
+        padding: 0px;
+        margin: 0px;
+    }
+    .nav ul li {
+        padding:0px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    ul li a{
+        color: green;
+        padding: 6px;
+        border-radius: 9px;
+    }
+    .landing .juice {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 70px; */
+        min-height: 100%;
+    }
+    .landing .juice h1 {
+        font-size: 39px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .landing .juice p {
+        animation: bend 3s 1.6s ease backwards;
+        color: black;
+        font-size: 1.3em;
+        margin-top: 13px;
+        padding: 10px;
+        margin: 0px;
+        /* padding-right: 20px; */
+        text-align: center;
+    }
+    
+    .fid {
+        color: rgb(52, 215, 61);
+        font-size: 47px;
+    }
+    .bop{
+        display: flex;
+        justify-content: center;
+    }
+    .bop button{
+        border-radius: 30px;
+    }
+   svg{
+    display: none;
+   }
+    .wind .king{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr; */
+        /* margin-left: 60px; */
+        /* gap: 20px; */
+        justify-content: center;
+        align-items: center;
+        padding: 26px;
+        margin: 0px;
+        margin-top: 30px;
+    }
+    .pin1 .jot1 img{
+        height: 280px;
+        width: 300px;
+    }
+    .pin2 .jot2 img{
+        height: 300px;
+        width: 300px;
+    }
+    .pin3 .jot3 img{
+        height: 280px;
+        width: 300px;
+    }
+    .bead{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .bead h1{
+      width: 100%;
+      font-size: 39px;
+      padding: 10px;
+    }
+    .bead p{
+      width: 100%;
+      margin-top: 20px;
+      font-size: 26px;
+      padding: 16px;
+    }
+    .rating{
+        display: none;
+    }
+    .back{
+        display: none;
+    }
+    .testimony{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 36px;
+        font-size: 20px;
+    }
+  }
